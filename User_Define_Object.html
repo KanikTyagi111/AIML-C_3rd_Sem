@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student1 = new Object();
+
+        student1.name = "vikas";
+        student1.id = 3045;
+        student1.city = "Ghaziabad";
+        student1.learning = function() {
+            console.log("learning tech course");
+        }
+
+        console.log(student1.name);
+        student1.learning();
+
+        let student2 = {
+            name : "vikas",
+            id : 3045,
+            city : "Ghaziabad",
+            learning : function() {
+                console.log("TechSub");
+            }
+        }
+
+        student2.pincode = 201009;
+        student2.yoga = function() {
+            console.log("Doing Yoga");
+        }
+         
+        console.log(student2.pincode);
+        student2.yoga();
+
+
+        function detail(id, name, city) {
+            this.id = id;
+            this.name = name;
+            this.city = city;
+        }
+
+        let d1 = new detail(101, "kanik", "gzb");
+        let d2 = new detail(102, "naman", "mdn");
+
+        console.log(d1);
+        console.log(d2);
+    </script>
+    
+</body>
+</html>
