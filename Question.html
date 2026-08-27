@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Product Object</title>
+</head>
+<body>
+    <script>
+        
+        let product = {
+            id: "1",
+            name: "Poco",
+            price: 2,
+            quantity: 1,
+
+            
+            calculateTotalPrice: function() {
+                return this.price * this.quantity;
+            },
+
+            
+            updateQuantity: function(newQuantity) {
+                this.quantity = newQuantity;
+            },
+
+            
+            displayInfo: function() {
+                console.log("Product Information ->");
+                console.log("Product ID: " + this.id);
+                console.log("Product Name: " + this.name);
+                console.log("Price: $" + this.price);
+                console.log("Quantity: " + this.quantity);
+                console.log("Total Value: $" + this.calculateTotalPrice());
+            }
+        };
+
+        
+
+        
+        product.displayInfo();
+
+        
+        product.updateQuantity(15);
+
+        
+        console.log("\n After Quantity Update ->");
+        product.displayInfo();
+    </script>
+</body>
+</html>
