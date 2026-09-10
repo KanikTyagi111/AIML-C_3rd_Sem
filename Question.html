@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Product Object</title>
+    <title></title>
 </head>
 <body>
     <script>
         
         let product = {
             id: "1",
-            name: "Poco",
+            name: "Ghanta",
             price: 2,
-            quantity: 1,
+            quantity: 10,
 
             
             calculateTotalPrice: function() {
@@ -26,14 +26,15 @@
 
             
             displayInfo: function() {
-                console.log("Product Information ->");
+                
                 console.log("Product ID: " + this.id);
                 console.log("Product Name: " + this.name);
+
                 console.log("Price: $" + this.price);
                 console.log("Quantity: " + this.quantity);
                 console.log("Total Value: $" + this.calculateTotalPrice());
             }
-        };
+        }
 
         
 
@@ -44,7 +45,7 @@
         product.updateQuantity(15);
 
         
-        console.log("\n After Quantity Update ->");
+        console.log("\n Update  ");
         product.displayInfo();
     </script>
 </body>

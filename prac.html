@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1 = {
+            id : 1,
+            name : "Ghanta",
+            price : 100,
+            quantity : 5,
+
+            totalPrice : function() {
+                return this.price* this.quantity;
+            }, 
+
+            updateQuantity : function(New) {
+                this.quantity = New;
+            },
+
+            display : function() {
+                console.log("ID : " + this.id);
+                console.log("Name : " + this.name);
+                console.log("Price : " + this.price);
+                console.log("Quantity : " + this.quantity);
+                console.log("Total Price : " + this.totalPrice());
+                
+            }
+        };
+
+        p1.totalPrice();
+        p1.display();
+
+        p1.updateQuantity(10);
+        p1.display();
+
+        p1.totalPrice();
+    </script>
+    
+</body>
+</html>
